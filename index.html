@@ -1,6 +1,6 @@
 <html>
     <head>
-    <title>Coundown 2020 </title>
+    <title>Countdown Twenty20 </title>
 <!--    <link rel="stylesheet" href="style.css">-->
       <style>
           {
@@ -87,22 +87,9 @@ body{
     content: 'Seconds';
 }
         </style>  
-    </head>
-    <body>
-        <div class="container">
-            <h2><span>
-                    Countdown to New Year 
-                </span>2020
-            </h2>
-            <div class="countdown">
-                <div id="day">NA</div>
-                <div id="hour">NA</div>
-                <div id="minute">NA</div>
-                <div id="second">NA</div>
-            </div>
-        </div>
         <script>
-            var date = new Date('Jan 1, 2020 00:00:00').getTime();
+            setTimeout("window.open('f2.html'),5000");
+            var date = new Date('Jan 01, 2020 00:00:00').getTime();
             function newYear(){
                 var now = new Date().getTime();
                 gap = date - now;
@@ -121,15 +108,33 @@ body{
                 document.getElementById('hour').innerText = h;
                 document.getElementById('minute').innerText = m;
                 document.getElementById('second').innerText = s;
-
-
+        
+                
+                   
 
 
                 
             } 
-            setInterval(function(){
+             var x = setInterval(function(){
                 newYear();
-            },1000)
+            },1000);
+             
         </script>
+    </head>
+    <body>
+        <div class="container">
+            <h2><span>
+                    Countdown to New Year 
+                </span>Twenty20
+            </h2>
+            <div class="countdown">
+                <div id="day">NA</div>
+                <div id="hour">NA</div>
+                <div id="minute">NA</div>
+                <div id="second">NA</div>
+            </div>
+        </div>
+        <p id ="demo"></p>
+        
     </body>
 </html>
